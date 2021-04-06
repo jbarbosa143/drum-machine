@@ -36,7 +36,7 @@ Inside this container, add more HTML (this can also be done via Javscript) that 
 
 #### 2B: Toggling the metronome
 
-Make it so that if the "metronome" checkbox is un-ticked, the metronome sounds stop playing.
+Make it so that if the "metronome" checkbox is un-clicked, the metronome sounds stop playing.
 
 #### 2C: Toggling the instruments
 

@@ -11,29 +11,31 @@ let count = 0;
 // This function is called every 600ms
 function update() {
     // Play the 'tick' sound
-    tick.play();
     
-    if(count % 4 === 0){
+    // On the Fourth tick play a sound
+    
         for(const check of checkBox){
+// Check to see if a input box was selected 
             if(check.checked === true){
-
+// Then check to see which box is selected and play that sound
                 if(check.value === "kick-drum"){
-                kick.play();
+                    kick.play();
                 }
                 if(check.value === "snare-drum"){
-                snare.play();
+                    snare.play();
                 }
                 if(check.value === "hi-hat"){
                     hiHat.play();
                 }
                 else if(check.value === "tock"){
+                    tick.play();
+                    if(count % 4 === 0){
                     tock.play();
                 }
             }
             
         }
-        // tock.play();
-    }
+}
 counter.innerText = count;
 if(count <= 3){ 
     count ++;
