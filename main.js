@@ -21,28 +21,61 @@ function update() {
 // Then check to see which box is selected and play that sound
                 if(check.value === "kick-drum"){
                     for(const radio of radios){
-                        // kick.play();
                         if(radio.checked === true){
-                            if(radio.value === "1"){
-                                if(count % 4) +1;
+                            if(radio.value === "k1"){
+                                if(count % 4=== 1)
                                 kick.play();
-                            }if(radio.value === 2){
+                            }if(radio.value === "k2"){
+                                if(count % 4 === 2) 
                                 kick.play();
-                            }if(radio.value === 3){
+                            }if(radio.value === "k3"){
+                                if(count % 4 === 3)
                                 kick.play();
-                            }if(radio.value === 4){
+                            }if(radio.value === "k4"){
+                                if(count % 4 === 0)
                                 kick.play();
                             }
-
                         }
                     }
                     
                 }
                 if(check.value === "snare-drum"){
-                    snare.play();
+                    for(const radio of radios){
+                        if(radio.checked === true){
+                            if(radio.value === "s1"){
+                                if(count % 4=== 1)
+                                snare.play();
+                            }if(radio.value === "s2"){
+                                if(count % 4 === 2) 
+                                snare.play();
+                            }if(radio.value === "s3"){
+                                if(count % 4 === 3)
+                                snare.play();
+                            }if(radio.value === "s4"){
+                                if(count % 4 === 0)
+                                snare.play();
+                            }
+                        }
+                    }
                 }
                 if(check.value === "hi-hat"){
-                    hiHat.play();
+                    for(const radio of radios){
+                        if(radio.checked === true){
+                            if(radio.value === "h1"){
+                                if(count % 4=== 1)
+                                hiHat.play();
+                            }if(radio.value === "h2"){
+                                if(count % 4 === 2) 
+                                hiHat.play();
+                            }if(radio.value === "h3"){
+                                if(count % 4 === 3)
+                                hiHat.play();
+                            }if(radio.value === "h4"){
+                                if(count % 4 === 0)
+                                hiHat.play();
+                            }
+                        }
+                    }
                 }
                 else if(check.value === "tock"){
                     tick.play();

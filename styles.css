@@ -95,6 +95,80 @@ p{
     padding: 10px;
 }
 
+.kd{
+    display: flex;
+    flex-direction: row;
+}
+.kdk1{
+    display: flex;
+    flex-direction: row;
+}
+
+.kdk2{
+    display: flex;
+    flex-direction: row;
+}
+
+.kdk3{
+    display: flex;
+    flex-direction: row;
+}
+
+.kdk4{
+    display: flex;
+    flex-direction: row;
+}
+
+.sd{
+    display: flex;
+    flex-direction: row;
+}
+
+.sd1{
+    display: flex;
+    flex-direction: row;
+}
+
+.sd2{
+    display: flex;
+    flex-direction: row;
+}
+
+.sd3{
+    display: flex;
+    flex-direction: row;
+}
+
+.sd4{
+    display: flex;
+    flex-direction: row;
+}
+
+.hh{
+    display: flex;
+    flex-direction: row;
+}
+
+.hh1{
+    display: flex;
+    flex-direction: row;
+}
+
+.hh2{
+    display: flex;
+    flex-direction: row;
+}
+
+.hh3{
+    display: flex;
+    flex-direction: row;
+}
+
+.hh4{
+    display: flex;
+    flex-direction: row;
+}
+
 @keyframes tick {
     0%   { transform: rotate(-30deg); }
     50%  { transform: rotate(30deg);  }
