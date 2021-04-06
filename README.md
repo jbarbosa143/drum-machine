@@ -43,7 +43,7 @@ Make it so that if the "metronome" checkbox is un-clicked, the metronome sounds 
 Additionally, make it so that if "kick drum" is checked, `kick-drum.mp3` is played every beat.
 
 Do the same for `hi-hat.mp3` nd `snare-drum.mp3`.
-
+-----------Done-----------------------------
 ## Part 3: Timing
 
 Now that we have custom instruments, lets allow users of our drum machine to choose when their sounds are played.

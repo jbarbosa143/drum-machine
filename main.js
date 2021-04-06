@@ -1,11 +1,12 @@
 // Setup 'tick' sound
 const tick = new Audio('sounds/tick.mp3');
-const tock = new Audio('/sounds/tock.mp3');
+const tock = new Audio('sounds/tock.mp3');
 const counter = document.querySelector('span');
-const hiHat = new Audio('/sounds/hi-hat.mp3');
-const kick = new Audio('/sounds/kick-drum.mp3');
-const snare = new Audio('/sounds/snare-drum.mp3');
+const hiHat = new Audio('sounds/hi-hat.mp3');
+const kick = new Audio('sounds/kick-drum.mp3');
+const snare = new Audio('sounds/snare-drum.mp3');
 const checkBox = document.querySelectorAll('[type = "checkbox"]');
+const radios = document.querySelectorAll("[type = 'radio']");
 let count = 0;
 
 // This function is called every 600ms
@@ -19,7 +20,23 @@ function update() {
             if(check.checked === true){
 // Then check to see which box is selected and play that sound
                 if(check.value === "kick-drum"){
-                    kick.play();
+                    for(const radio of radios){
+                        kick.play();
+                        if(radio.check === true){
+                            if(radio.value === 1){
+                                if(count % 4) +1;
+                                kick.play();
+                            }if(radio.value === 2){
+                                kick.play();
+                            }if(radio.value === 3){
+                                kick.play();
+                            }if(radio.value === 4){
+                                kick.play();
+                            }
+
+                        }
+                    }
+                    
                 }
                 if(check.value === "snare-drum"){
                     snare.play();

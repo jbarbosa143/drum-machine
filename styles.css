@@ -54,17 +54,24 @@ body {
 
 .checkbox{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: row; */
     background-color:  #e07a5f;
     border-radius: 10px;
     padding: 20px;
 }
+
+input{
+    display: flex;
+    flex-direction: column;
+}
+
 p{
     font-size:24px;
     background-color: #f2cc8f;
     border-radius: 10px;
     padding: 10px;
 }
+
 @keyframes tick {
     0%   { transform: rotate(-30deg); }
     50%  { transform: rotate(30deg);  }
