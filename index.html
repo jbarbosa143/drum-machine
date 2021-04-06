@@ -10,8 +10,20 @@
 <body>
     <div class="tip">
         (Click anywhere to hear sound...)
-    </div>
+        <div class="checkbox">
+            <h3>Try Different Sounds!!!</h3>
+            <input type="checkbox" id="kick-drum" value="kick-drum">
+            <label for="kick-drum">Kick Drum</label>
+            <input type="checkbox" id="snare-drum" value="snare-drum">
+            <label for="snare-drum">Snare Drum</label>
+            <input type="checkbox" id="hi-hat" value="hi-hat">
+            <label for="hi-hat">Hi Hat</label>
+            <input type="checkbox" id="tock" value="tock">
+            <label for="tock">Default</label>
+        </div>
 
+    </div>
+    <div class="count"><p>Metronome Count :&nbsp;<span>0</span></p> </div>
     <div class="metronome">
         <div class="background-left"></div>
         <div class="background-center">
@@ -20,7 +32,6 @@
         <div class="background-right"></div>
         <div class="arm"></div>
     </div>
-
     <script src="main.js"></script>
 </body>
 </html>
