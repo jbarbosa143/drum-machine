@@ -21,9 +21,9 @@ function update() {
 // Then check to see which box is selected and play that sound
                 if(check.value === "kick-drum"){
                     for(const radio of radios){
-                        kick.play();
-                        if(radio.check === true){
-                            if(radio.value === 1){
+                        // kick.play();
+                        if(radio.checked === true){
+                            if(radio.value === "1"){
                                 if(count % 4) +1;
                                 kick.play();
                             }if(radio.value === 2){

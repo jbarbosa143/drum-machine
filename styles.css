@@ -54,10 +54,32 @@ body {
 
 .checkbox{
     display: flex;
-    /* flex-direction: row; */
+    flex-direction: column;
     background-color:  #e07a5f;
+    height:auto;
     border-radius: 10px;
     padding: 20px;
+    /* border-top: solid black 5px; */
+}
+
+.kick-drum{
+    border-top: solid black 5px;
+    margin-top: 10px;
+}
+
+.snare-drum{
+    border-top: solid black 5px;
+    margin-top: 10px;
+}
+
+.hi-hat{
+    border-top: solid black 5px;
+    margin-top: 10px;
+}
+
+.default{
+    border-top: solid black 5px;
+    margin-top: 10px;
 }
 
 input{
